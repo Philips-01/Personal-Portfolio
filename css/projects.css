@@ -38,32 +38,36 @@ body {
   background: rgba(8, 12, 22, 0.97);
 }
 
-.brand-logo,
+/* .brand-logo,
 .footer-brand {
   color: #fff;
   font-size: 1.35rem;
   font-weight: 850;
   letter-spacing: -0.7px;
   text-decoration: none;
-}
+} */
 
-.brand-logo span,
+/* .brand-logo span,
 .footer-brand span {
   color: var(--project-blue-light);
-}
+} */
 
-.projects-navbar .nav-link {
+/* .projects-navbar .nav-link {
   color: #b5bfd0;
   font-size: 0.91rem;
   font-weight: 500;
   padding: 9px 13px !important;
   transition: color 0.25s ease;
-}
+} */
 
 .projects-navbar .nav-link:hover,
 .projects-navbar .nav-link.active {
   color: #fff;
 }
+
+/* .nav-link .active{
+    text-decoration: underline;
+} */
 
 .projects-navbar .nav-link.active {
   position: relative;

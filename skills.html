@@ -21,7 +21,7 @@
 <body id="top">
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg skills-navbar">
+    <!-- <nav class="navbar navbar-expand-lg skills-navbar">
         <div class="container">
 
             <a class="navbar-brand" href="index.html">
@@ -72,8 +72,62 @@
             </div>
 
         </div>
-    </nav>
+    </nav> -->
 
+     <nav class="navbar navbar-expand-lg fixed-top main-navbar" id="mainNavbar">
+        <div class="container">
+
+            <a class="navbar-brand brand-logo" href="index.html" aria-label="Philips Ajibola homepage">
+                <span class="brand-mark">P<span>.</span></span>
+                <span class="brand-name">PHILIPS<span>AJIBOLA</span></span>
+            </a>
+
+            <button
+                class="navbar-toggler custom-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="skills.html" aria-current="page">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary-custom nav-cta" href="contact.html">
+                            Let's Talk
+                            <i class="bi bi-arrow-up-right ms-1"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
 
@@ -688,48 +742,73 @@
 
 
     <!-- FOOTER -->
-    <footer class="skills-footer">
+    <footer class="main-footer">
         <div class="container">
 
-            <div class="skills-footer-main">
-                <div>
-                    <a class="footer-brand" href="index.html">
-                        <span class="brand-icon"><i class="bi bi-code-slash"></i></span>
-                        Philip<span class="brand-accent">s.</span>
+            <div class="row g-4 footer-main">
+
+                <div class="col-lg-5">
+                    <a href="index.html" class="navbar-brand brand-logo footer-brand">
+                        <span class="brand-mark">P<span>.</span></span>
+                        <span class="brand-name">PHILIPS<span>AJIBOLA</span></span>
                     </a>
 
                     <p class="footer-description">
-                        Learning, building, and improving one project at a time.
+                        Building thoughtful digital experiences through frontend
+                        development, responsive design, and continuous learning.
                     </p>
+
+                    <div class="footer-socials">
+                        <!-- Replace these placeholder links with your real profiles. -->
+                        <a href="#" aria-label="GitHub profile" title="Add your GitHub profile URL">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn profile" title="Add your LinkedIn profile URL">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="#" aria-label="X profile" title="Add your X profile URL">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="skills-footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="skills.html">Skills</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
+                <div class="col-6 col-lg-2 offset-lg-1">
+                    <h3 class="footer-heading">Navigation</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="skills.html">My Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
 
-                <div class="skills-footer-socials">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                    <h3 class="footer-heading">Technologies</h3>
 
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
+                    <ul class="footer-links">
+                        <li><a href="skills.html">HTML & CSS</a></li>
+                        <li><a href="skills.html">JavaScript ES6+</a></li>
+                        <li><a href="skills.html">Bootstrap & jQuery</a></li>
+                        <li><a href="skills.html">React & Next.js</a></li>
+                        <li><a href="skills.html">Git & GitHub</a></li>
+                    </ul>
                 </div>
+
             </div>
 
-            <div class="skills-footer-bottom">
+            <div class="footer-bottom">
                 <p>
-                    &copy; <span class="current-year"></span>
-                    Philips Ajibola. All rights reserved.
+                    &copy; <span id="copyrightYear">2026</span> Philips Ajibola.
+                    All rights reserved.
                 </p>
 
-                <a href="#top">
-                    Back to top <i class="bi bi-arrow-up"></i>
+                <a href="#home" class="back-to-top" aria-label="Back to top">
+                    Back to top
+                    <i class="bi bi-arrow-up"></i>
                 </a>
             </div>
 

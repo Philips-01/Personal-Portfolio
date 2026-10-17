@@ -1296,3 +1296,134 @@ button:focus-visible {
         transform: none;
     }
 }
+
+
+/* Consistent footer matching the homepage */
+.main-footer {
+    padding: 65px 0 0;
+    color: #a5b4c9;
+    background: #070b13;
+}
+
+.main-footer .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 45px;
+    border-bottom: 0;
+    gap: 0;
+}
+
+.main-footer .footer-description {
+    max-width: 340px;
+    margin: 0 0 22px;
+    color: #8796ad;
+    font-size: 12px;
+    line-height: 1.95;
+}
+
+.main-footer .footer-heading {
+    margin-bottom: 23px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.main-footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-footer .footer-links a {
+    color: #8796ad;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.main-footer .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.main-footer .footer-bottom p {
+    margin: 0;
+    color: #718198;
+    font-size: 11px;
+}
+
+@media (max-width: 575px) {
+    .main-footer .footer-main {
+        row-gap: 28px;
+    }
+}
+
+
+/* Fix footer column widths on About page */
+.main-footer .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.main-footer .footer-main > .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.main-footer .footer-main > .col-lg-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.main-footer .footer-main > .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.main-footer .footer-links a {
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+@media (max-width: 991.98px) {
+    .main-footer .footer-main > .col-lg-5,
+    .main-footer .footer-main > .col-lg-2,
+    .main-footer .footer-main > .col-lg-3 {
+        flex: initial;
+        max-width: initial;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main-footer .footer-links a {
+        white-space: normal;
+    }
+}
+
+
+/* Match the homepage footer logo spacing */
+.main-footer .footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-footer .footer-brand .brand-mark {
+    flex-shrink: 0;
+}
+
+.main-footer .footer-brand .brand-name {
+    margin-left: 0;
+    padding-left: 0;
+    white-space: nowrap;
+}
+
