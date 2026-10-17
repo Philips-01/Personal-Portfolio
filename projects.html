@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects | Philips Ajibola</title>
+  <meta name="description" content="Explore frontend development projects by Philips Ajibola, including HomeTube, authentication interfaces, and the Tonad Catering website.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Projects Page Styles -->
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg projects-navbar fixed-top" id="projectsNavbar">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        PHILIPS<span>.</span>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#projectsNav"
+        aria-controls="projectsNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="projectsNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a href="contact.html" class="btn nav-contact-btn">Let's Talk <i class="bi bi-arrow-up-right"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PROJECT HERO -->
+    <section class="projects-hero">
+      <div class="hero-grid"></div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-8 reveal reveal-left">
+            <span class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              MY WORK
+            </span>
+
+            <h1 class="projects-title">
+              Ideas turned into
+              <span>digital experiences.</span>
+            </h1>
+
+            <p class="projects-intro">
+              A collection of websites and interfaces I've been building as I grow
+              as a frontend developer. Each project is an opportunity to solve
+              problems, explore ideas, and create better user experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projectGallery" class="btn btn-primary-custom">
+                Explore Projects <i class="bi bi-arrow-down-right"></i>
+              </a>
+              <a href="contact.html" class="btn btn-outline-custom">
+                Work With Me
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 reveal reveal-right">
+            <div class="project-stats-card">
+              <div class="stats-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+
+              <p class="stats-label">MY DEVELOPMENT APPROACH</p>
+              <h2>Build. Learn. Improve.</h2>
+              <p class="stats-description">
+                Practical projects, thoughtful interfaces, and continuous learning.
+              </p>
+
+              <div class="stats-divider"></div>
+
+              <div class="stats-bottom">
+                <span><i class="bi bi-check2-circle"></i> Responsive layouts</span>
+                <span><i class="bi bi-check2-circle"></i> Interactive features</span>
+                <span><i class="bi bi-check2-circle"></i> User-focused design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-bottom-label">
+          <span>SELECTED PROJECTS</span>
+          <span>01 — 03</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT GALLERY -->
+    <section class="project-gallery section-padding" id="projectGallery">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              PORTFOLIO SHOWCASE
+            </span>
+            <h2>Things I've <span>created.</span></h2>
+            <p>
+              Explore the projects, the ideas behind them, and the technologies
+              used to bring them to life.
+            </p>
+          </div>
+
+          <div class="project-count">
+            <span id="visibleProjectCount">03</span>
+            <small>PROJECTS</small>
+          </div>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">
+            All Projects <span>03</span>
+          </button>
+          <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">
+            Web Applications
+          </button>
+          <button class="filter-btn" type="button" data-filter="ui" aria-pressed="false">
+            UI / Interfaces
+          </button>
+          <button class="filter-btn" type="button" data-filter="business" aria-pressed="false">
+            Business Websites
+          </button>
+        </div>
+
+        <!-- PROJECT CARDS -->
+        <div class="row g-4 project-grid" id="projectGrid">
+
+          <!-- HOMETUBE -->
+          <div class="col-lg-6 project-item reveal" data-category="web">
+            <article class="project-card">
+              <div class="project-visual hometube-visual">
+                <div class="visual-topbar">
+                  <div class="mini-brand"><i class="bi bi-play-btn-fill"></i> HomeTube</div>
+                  <div class="mini-top-icons">
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-person-circle"></i>
+                  </div>
+                </div>
+
+                <div class="hometube-layout">
+                  <div class="mini-sidebar">
+                    <span class="selected"><i class="bi bi-house-fill"></i></span>
+                    <span><i class="bi bi-play-circle"></i></span>
+                    <span><i class="bi bi-clock-history"></i></span>
+                    <span><i class="bi bi-heart"></i></span>
+                  </div>
+
+                  <div class="mini-video-area">
+                    <div class="mini-searchbar">
+                      <span>Search videos...</span>
+                      <i class="bi bi-search"></i>
+                    </div>
+
+                    <div class="mini-video-grid">
+                      <div class="mini-video">
+                        <div class="video-thumb thumb-one">
+                          <i class="bi bi-play-fill"></i>
+                          <small>08:24</small>
+                        </div>
+                        <div class="mini-video-info">
+                          <span class="mini-avatar"></span>
+                          <div><b>Discover Something New</b><small>HomeTube Channel</small></div>
+                        </div>
+                      </div>
+
+                      <div class="mini-video">
+                        <div class="video-thumb thumb-two">
+                          <i class="bi bi-play-fill"></i>
+                          <small>12:10</small>
+                        </div>
+                        <div class="mini-video-info">
+                          <span class="mini-avatar"></span>
+                          <div><b>Creative Ideas</b><small>Daily Stories</small></div>
+                        </div>
+                      </div>
+
+                      <div class="mini-video">
+                        <div class="video-thumb thumb-three">
+                          <i class="bi bi-play-fill"></i>
+                          <small>05:46</small>
+                        </div>
+                        <div class="mini-video-info">
+                          <span class="mini-avatar"></span>
+                          <div><b>Explore the World</b><small>Explore Media</small></div>
+                        </div>
+                      </div>
+
+                      <div class="mini-video">
+                        <div class="video-thumb thumb-four">
+                          <i class="bi bi-play-fill"></i>
+                          <small>16:32</small>
+                        </div>
+                        <div class="mini-video-info">
+                          <span class="mini-avatar"></span>
+                          <div><b>Learn and Build</b><small>Tech Corner</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card-content">
+                <div class="project-meta">
+                  <span class="project-category">WEB APPLICATION</span>
+                  <span class="project-number">01 / 03</span>
+                </div>
+
+                <h3>HomeTube <span class="project-status">In Development</span></h3>
+
+                <p>
+                  A video-sharing website inspired by familiar streaming platforms.
+                  The project focuses on a structured video feed and pages for
+                  uploading videos, favourites, viewing history, and account details.
+                </p>
+
+                <div class="project-features">
+                  <span><i class="bi bi-check2"></i> Video feed layout</span>
+                  <span><i class="bi bi-check2"></i> Upload page interface</span>
+                  <span><i class="bi bi-check2"></i> Responsive design</span>
+                </div>
+
+                <div class="tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap 5</span>
+                </div>
+
+                <div class="project-card-footer">
+                  <span class="project-type"><i class="bi bi-window"></i> Interactive website</span>
+                  <span class="project-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- AUTHENTICATION UI -->
+          <div class="col-lg-6 project-item reveal" data-category="ui">
+            <article class="project-card">
+              <div class="project-visual auth-visual">
+                <div class="auth-browser-bar">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-address">secure.app / account</div>
+                  <i class="bi bi-three-dots"></i>
+                </div>
+
+                <div class="auth-preview">
+                  <div class="auth-decoration auth-decoration-one"></div>
+                  <div class="auth-decoration auth-decoration-two"></div>
+
+                  <div class="auth-preview-card">
+                    <div class="auth-preview-logo"><i class="bi bi-hexagon-fill"></i></div>
+                    <span class="auth-welcome">WELCOME BACK</span>
+                    <h4>Sign in to continue</h4>
+                    <p>Access your workspace securely.</p>
+
+                    <div class="auth-input-preview">
+                      <i class="bi bi-envelope"></i>
+                      <span>Email address</span>
+                    </div>
+                    <div class="auth-input-preview">
+                      <i class="bi bi-lock"></i>
+                      <span>Password</span>
+                      <i class="bi bi-eye ms-auto"></i>
+                    </div>
+                    <div class="auth-remember">
+                      <span><i class="bi bi-check-square-fill"></i> Remember me</span>
+                      <span>Forgot password?</span>
+                    </div>
+                    <div class="auth-submit-preview">Sign In <i class="bi bi-arrow-right"></i></div>
+                    <div class="auth-bottom-text">New here? <b>Create an account</b></div>
+                  </div>
+
+                  <div class="floating-auth-tag">
+                    <i class="bi bi-shield-check"></i> Authentication UI
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card-content">
+                <div class="project-meta">
+                  <span class="project-category">UI / INTERFACE</span>
+                  <span class="project-number">02 / 03</span>
+                </div>
+
+                <h3>Sign In / Sign Up Experience</h3>
+
+                <p>
+                  A modern authentication interface built around a wide, polished
+                  card layout, smooth transitions, responsive forms, and a clean
+                  visual hierarchy.
+                </p>
+
+                <div class="project-features">
+                  <span><i class="bi bi-check2"></i> Sign-in and registration forms</span>
+                  <span><i class="bi bi-check2"></i> Responsive card layout</span>
+                  <span><i class="bi bi-check2"></i> Interactive UI elements</span>
+                </div>
+
+                <div class="tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap 5</span>
+                </div>
+
+                <div class="project-card-footer">
+                  <span class="project-type"><i class="bi bi-window"></i> Interface design</span>
+                  <span class="project-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- TONAD CATERING -->
+          <div class="col-lg-6 project-item reveal" data-category="business">
+            <article class="project-card">
+              <div class="project-visual catering-visual">
+                <div class="catering-browser-bar">
+                  <span class="catering-logo">TONAD<span>.</span></span>
+                  <div class="catering-mini-nav">
+                    <span>Home</span>
+                    <span>Menu</span>
+                    <span>About</span>
+                    <span>Contact</span>
+                  </div>
+                  <i class="bi bi-list"></i>
+                </div>
+
+                <div class="catering-hero-preview">
+                  <div class="catering-copy">
+                    <span class="catering-kicker">MADE WITH CARE</span>
+                    <h4>Good food.<br>Beautiful moments.</h4>
+                    <p>A taste worth remembering.</p>
+                    <span class="catering-mini-button">EXPLORE MENU <i class="bi bi-arrow-right"></i></span>
+                  </div>
+
+                  <div class="catering-food-art">
+                    <div class="food-plate">
+                      <div class="food-center"></div>
+                      <span class="food-garnish garnish-one"></span>
+                      <span class="food-garnish garnish-two"></span>
+                      <span class="food-garnish garnish-three"></span>
+                      <span class="food-leaf leaf-one"></span>
+                      <span class="food-leaf leaf-two"></span>
+                    </div>
+                    <span class="food-spark spark-one">✦</span>
+                    <span class="food-spark spark-two">✧</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-card-content">
+                <div class="project-meta">
+                  <span class="project-category">BUSINESS WEBSITE</span>
+                  <span class="project-number">03 / 03</span>
+                </div>
+
+                <h3>Tonad Catering</h3>
+
+                <p>
+                  A catering website concept designed to give a food business a
+                  professional online presence, introduce its services, showcase
+                  its offerings, and help potential customers get in touch.
+                </p>
+
+                <div class="project-features">
+                  <span><i class="bi bi-check2"></i> Business-focused homepage</span>
+                  <span><i class="bi bi-check2"></i> Service and menu presentation</span>
+                  <span><i class="bi bi-check2"></i> Contact-oriented design</span>
+                </div>
+
+                <div class="tech-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap 5</span>
+                </div>
+
+                <div class="project-card-footer">
+                  <span class="project-type"><i class="bi bi-building"></i> Business website</span>
+                  <span class="project-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- EMPTY FILTER STATE -->
+          <div class="col-12 d-none" id="emptyProjects">
+            <div class="empty-projects">
+              <i class="bi bi-folder2-open"></i>
+              <h3>No projects in this category yet.</h3>
+              <p>Try another category to explore the current projects.</p>
+              <button class="btn btn-primary-custom" type="button" data-filter="all">
+                View All Projects
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="projects-note reveal">
+          <i class="bi bi-info-circle"></i>
+          <p>
+            These showcase previews represent the project concepts. Live demos
+            and source-code links can be added when the projects are published.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section section-padding">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              HOW I WORK
+            </span>
+            <h2>From idea to <span>interface.</span></h2>
+            <p>
+              My approach is built around learning through practice and improving
+              each stage of the development process.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 process-grid">
+          <div class="col-md-4 reveal">
+            <div class="process-card">
+              <span class="process-number">01</span>
+              <div class="process-icon"><i class="bi bi-lightbulb"></i></div>
+              <h3>Understand</h3>
+              <p>
+                Identify the purpose of the project, its audience, and the
+                experience the interface should deliver.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="process-card">
+              <span class="process-number">02</span>
+              <div class="process-icon"><i class="bi bi-layout-text-window"></i></div>
+              <h3>Build</h3>
+              <p>
+                Turn the concept into a structured, responsive interface using
+                suitable web technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal">
+            <div class="process-card">
+              <span class="process-number">03</span>
+              <div class="process-icon"><i class="bi bi-arrow-repeat"></i></div>
+              <h3>Improve</h3>
+              <p>
+                Test the experience, fix issues, refine the design, and keep
+                learning from the development process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="projects-cta-section">
+      <div class="container">
+        <div class="projects-cta reveal">
+          <div class="cta-glow"></div>
+          <div class="cta-content">
+            <span class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              HAVE AN IDEA?
+            </span>
+            <h2>Let's build something <span>meaningful.</span></h2>
+            <p>
+              Have a website idea, a collaboration in mind, or a project to discuss?
+              I'd be happy to hear about it.
+            </p>
+            <a href="contact.html" class="btn btn-light-custom">
+              Get in Touch <i class="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+          <div class="cta-decoration"><i class="bi bi-code-square"></i></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="projects-footer">
+    <div class="container">
+      <div class="footer-content">
+        <a class="footer-brand" href="index.html">PHILIPS<span>.</span></a>
+        <p>Building my skills, one project at a time.</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Philips Ajibola. All rights reserved.</span>
+        <a href="#top" id="backToTop">Back to top <i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Projects Page JavaScript -->
+  <script src="js/projects.js"></script>
+</body>
+</html>
